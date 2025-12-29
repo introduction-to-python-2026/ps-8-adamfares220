@@ -1,0 +1,11 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('csv.trees.csv')
+
+  features = {"address", "species", "age", "health", "height"}
+
+df['TEMON'].hist(bins=20, figsize=(10, 8))
+plt.savefig("histograms.TEMON.png")
+plt.close()
